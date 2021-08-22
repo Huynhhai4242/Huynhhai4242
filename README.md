@@ -1,2 +1,2 @@
 - 👋 Hi, I’m @Huynhhai4242
-- 👀 Ủng hộ tôi qua Momo nhé 0397929246
+- 👀 Ủng hộ mình qua Momo nhé 0397929246
