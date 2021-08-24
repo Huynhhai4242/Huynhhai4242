@@ -1,3 +1,24 @@
+BÀI 2
+---------------------------------------------------------------
+Set, get, click html element từ webBrowser
+
+// Kiểu 1 (chỉ áp dụng khi thẻ html có id. Mục đích là cho gọn)
+webBrowser1.Document.GetElementById("").GetAttribute("value"); // Lấy giá trị
+webBrowser1.Document.GetElementById("").SetAttribute("value", ""); // Truyền giá trị
+webBrowser1.Document.GetElementById("").InvokeMember("click"); // Click vô nút, ô, blabla...
+// Kiểu 2 (cân mọi loại thẻ html)
+var hello = webBrowser1.Document.GetElementsByTagName("");
+foreach (HtmlElement xinchao in hello)
+{
+     if (xinchao.GetAttribute("") == "")
+     {
+         xinchao.InvokeMember("click"); // Có thể thay InvokeMember bằng GetAttribute, SetAttribute, InvokeMember như kiểu 1
+     }
+}
+
+
+---------------------------------------------------------------
+//Code trong video bài 2
         string Ten_Facebook; // Kiểu dữ liệu chuỗi (mục đích khi get được tên Facbeook sẽ lưu tên đó vô "Ten_Facebook")
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
